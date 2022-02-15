@@ -249,10 +249,38 @@ img {display: block;}
 
   color: var(--primary-color);
 }
+
+.our-team { background-color: #F5F4FA;}
+
+.our-team-item {
+  background-color: var(--main-color);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+border-radius: 0px 0px 4px 4px;
+}
+
+/* Нужно разобраться с тенями и радиусом */
+
+.our-team-item:not(:last-child){
+  margin-right: 30px;
+}
+
+.our-team-wrap {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  text-align: center;
+}
+
+.our-team-subtitle {
+margin-top: 0;
+margin-bottom: 10px;
+}
+
 /*==========Footer=============*/
 
 .footer {
     background-color: var(--secondary-bg-color);
+    padding-top: 60px;
+    padding-bottom: 60px;
   }
   
 .footer-link {
@@ -260,6 +288,10 @@ img {display: block;}
     font-style: normal;
     text-decoration: none;
   }
+.footer-logo {display: inline-block;
+  margin-bottom: 20px;}
+
+.footer-item {margin-bottom: 10px;}
   
 .address {
     color: var(--main-color);
@@ -282,9 +314,12 @@ img {display: block;}
     font-size: 18px;
     line-height: 2;
     letter-spacing: 0.06em;
-    
     color: #212121;
+
+    margin-top: 0;
+    margin-bottom: 4px;
   }
+
   .portfolio-description {
     font-family: Roboto;
     font-style: normal;
@@ -293,4 +328,55 @@ img {display: block;}
     line-height: 1.87;
     letter-spacing: 0.03em;
     color: #757575;
+
+    margin-top: 0;
+    margin-bottom: 0;
   }
+
+  .portfolio-link {
+  display: block;
+  text-decoration: none;
+  }
+
+  .portfolio-link:hover,
+  .portfolio-link:focus {
+    text-decoration: underline;
+  }
+
+  .portfolio-buttons-list {
+    display: flex;
+    justify-content: center;
+    margin-top: 0;
+    margin-bottom: 50px;
+    padding-left: 0px;
+  }
+
+  .portfolio-button:not(:last-child){
+    margin-right: 8px;
+  }
+
+  .portfolio-examples-items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding-left: 0px;
+  }
+
+  .portfolio-item:not(:nth-last-child(-n+3)){
+    margin-bottom: 30px;
+  }
+
+  .portfolio-img {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+
+  .portfolio-wrap {border-left: 1px solid rgba(238, 238, 238, 1);
+    border-bottom: 1px solid rgba(238, 238, 238, 1);
+    border-right: 1px solid rgba(238, 238, 238, 1);
+    padding: 20px 24px;}
+
+  
