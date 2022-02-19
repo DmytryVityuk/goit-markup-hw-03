@@ -139,15 +139,14 @@ ol {
 .hero-button:hover,
 .hero-button:focus {
   background-color: var(--hero-btn-hover-color);
-
 }
 
 /*============SECTION===========*/
-.we-do {display: block;
-  width:100%;
+.we-do {
+  display: block;
+  width: 100%;
   height: auto;
-  padding-top: 0px;
-  padding-bottom: 94px;}
+}
 
 .section-title {
   font-size: 36px;
@@ -261,6 +260,7 @@ ol {
 }
 
 .our-team {
+  margin-top: 94px;
   background-color: #f5f4fa;
 }
 
@@ -270,9 +270,11 @@ ol {
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
 }
-.our-team-img {display: block;
-width: 100%;
-height: auto;}
+.our-team-img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
 
 /* Нужно разобраться с тенями и радиусом */
 
@@ -398,7 +400,7 @@ height: auto;}
 .portfolio-img {
   display: block;
   width: 100%;
-  height:auto;
+  height: auto;
 }
 
 .button {
