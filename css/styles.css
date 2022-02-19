@@ -45,9 +45,6 @@ ol {
   margin-bottom: 0;
   padding-left: 0;
 }
-img {
-  display: block;
-}
 
 .wrapper {
   width: 1200px;
@@ -83,7 +80,6 @@ img {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  flex-wrap: wrap;
 }
 .contacts-list:not(:last-child) {
   margin-right: 50px;
@@ -147,6 +143,11 @@ img {
 }
 
 /*============SECTION===========*/
+.we-do {display: block;
+  width:100%;
+  height: auto;
+  padding-top: 0px;
+  padding-bottom: 94px;}
 
 .section-title {
   font-size: 36px;
@@ -155,6 +156,7 @@ img {
 }
 
 /*==========BENEFITS============*/
+
 .benefits-subtitle {
   text-align: left;
   font-size: 14px;
@@ -182,10 +184,6 @@ img {
   width: calc(100%-90px) / 4;
 }
 
-.benefits-item:not(:last-child) {
-  margin-right: 30px;
-}
-
 .benefits-subtitle {
   margin-top: 0;
   margin-bottom: 10px;
@@ -202,10 +200,6 @@ img {
   color: var(--secondary-color);
   font-size: 14px;
   line-height: 1.71;
-}
-
-.title-section {
-  padding-bottom: 50px;
 }
 
 .nav-list-item.current,
@@ -263,6 +257,7 @@ img {
   letter-spacing: 0.03em;
 
   color: var(--primary-color);
+  margin-bottom: 50px;
 }
 
 .our-team {
@@ -275,6 +270,9 @@ img {
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
 }
+.our-team-img {display: block;
+width: 100%;
+height: auto;}
 
 /* Нужно разобраться с тенями и радиусом */
 
@@ -311,7 +309,7 @@ img {
   margin-bottom: 20px;
 }
 
-.footer-item {
+.footer-item:not(:last-child) {
   margin-bottom: 10px;
 }
 
@@ -390,17 +388,17 @@ img {
   margin-bottom: 30px;
 }
 
-.portfolio-img {
-  display: block;
-  width: 100%;
-  height: auto;
-}
-
 .portfolio-wrap {
   border-left: 1px solid rgba(238, 238, 238, 1);
   border-bottom: 1px solid rgba(238, 238, 238, 1);
   border-right: 1px solid rgba(238, 238, 238, 1);
   padding: 20px 24px;
+}
+
+.portfolio-img {
+  display: block;
+  width: 100%;
+  height:auto;
 }
 
 .button {
